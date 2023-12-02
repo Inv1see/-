@@ -9,6 +9,7 @@ bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
 
     bot.sendMessage(chatId, 'Привет! Давай сыграем в "камень, ножницы, бумага".');
+    bot.sendMessage(chatId, '/rock - выбрать камень\n/scissors - выбрать ножницы\n/paper - выбрать бумагу');
 });
 
 // Обработчик текстовых сообщений
